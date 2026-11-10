@@ -14,8 +14,6 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - 'vitest.config.mjs'
-  schedule:
-    - cron: '0 9 * * 1'
 
 jobs:
   fixture-drift:
