@@ -1,11 +1,7 @@
 name: Chang7 upstream sync
 on:
-  schedule:
-    - cron: '2-59/5 * * * *'
+  # Manual upstream review only. Local fork changes must never be overwritten automatically.
   workflow_dispatch:
-  push:
-    paths:
-      - '.github/workflows/chang7-upstream-sync.yml'
 permissions:
   contents: write
 concurrency:
